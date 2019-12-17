@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased !important;
+}
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  color: #008db1; /*cor dos titulos*/
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover, a:focus{
+  color: #008db1;
+}
+
+
+p,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h4{
+  font-family: "Montserrat", sans-serif;
+  font-size: 10pt;
+}
+
+#tela-1,
+#tela-2,
+#tela-3,
+#tela-4,
+#tela-5,
+#tela-6,
+#tela-video,
+#tela-7 {
+  color: white; /*cor dos textos*/
+}
+
+#tela-1 {
+  height: 100%;
+  width: 100%;
+  background-color: #1d4484;/*cor do cabecalo/tela inicial */
+}
+
+#tela-2 {
+  background-color: #043077;/*cor da 2 tela e assim por diante*/
+}
+
+#tela-3 {
+  background-color: #032965;
+}
+
+#tela-4 {
+  background-color: #032254;
+}
+
+#tela-5 {
+  background-color: #021a41;
+}
+
+#tela-6 {
+  background-color: #021330;
+}
+
+#tela-video{
+  background-color: #021028;
+}
+
+#tela-download{
+  background-color: #010c1e;
+  color: white;
+}
+
+#tela-7 {
+  background-color: #000b1c;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%; /*cabecalho onde fica os botoes de desafio, time e etc*/
+}
+
+.logo-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-color-secundary {
+  color: #008db1;
+}
+
+.text-color-secundary:hover {
+  color: white;
+}
+
+.col-celular {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding-top: 7%;
+  padding-bottom: 7%;
+}
+
+.col-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-time {
+  border: white solid 5px;
+}
+
+.coluna{
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.social-medias{
+  font-size: 20pt;
+}
+.media-link{
+  padding-left: 10px;
+}
+.screenshot{
+  max-width: 50%;
+}
+/* Animações */
+
+[data-anime] {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime="button"] {
+  transform: translate3d(0, 50px, 0);
+}
+
+[data-anime="logo"] {
+  transform: scale(0);
+  transition: 3s;
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+  transform: scale(1);
+}
